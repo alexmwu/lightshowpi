@@ -1,0 +1,41 @@
+#Add to boot.txt
+# GPU core freq to 250 Mhz (otherwise SPI clock has wrong freq)
+core_freq=250
+
+hostname -I
+
+ifconfig
+
+sudo reboot
+
+sudo apt-get install 
+sudo apt-get update
+
+sudo apt-get upgrade
+
+uname -a
+
+sudo shutdown -h now
+
+sudo head user/us-east-1/772003465130/...
+
+sudo /greengrass/ggc/packages/1.3.0/greengrassd start
+
+sudo python ~/lightshowpi/py/synchronized_lights.py --file=/home/pi/Music/Illenium\ -\ Fractures\ \(feat.\ Nevve\)-ZCu2gwLj9ok.mp3
+
+python ~/lightshow/src/ggDevice/userAuthGgad.py -e a2fdtri7eg6ona.iot.us-east-1.amazonaws.com -r ~/Projects/userAuthConfig/root-ca-cert.pem -c ~/Projects/userAuthConfig/2c90fa320a.cert.pem -k ~/Projects/userAuthConfig/2c90fa320a.private.key -n UserAuth
+
+youtube-dl youtube-dl -x --audio-format mp3 "ytsearch1:all i want for christmas is you"
+
+# downloads top 2 results (as opposed to 1)
+youtube-dl youtube-dl -x --audio-format mp3 "ytsearch2:all i want for christmas is you"
+
+youtube-dl youtube-dl -x --audio-format mp3 "gvsearch1::all i want for christmas is you"
+
+sudo python ~/lightshowpi/py/synchronized_lights_led_strip.py --file=/home/pi/Music/Illenium\ -\ Fractures\ \(feat.\ Nevve\)-ZCu2gwLj9ok.mp3
+
+# update youtube-dl
+sudo -H pip install --upgrade youtube-dl
+
+# download to Music directory without redownloading music
+ youtube-dl -x --download-archive ~/Music/youtube-dl-archive --audio-format mp3 "ytsearch1:feel good daya"  -o "~/Music/%(title)s.%(ext)s"
